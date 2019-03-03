@@ -4,7 +4,8 @@
   "description": "Sample PWA app with Vue without using vue-cli",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --progress"
   },
   "author": "PCzarny",
   "license": "MIT",
