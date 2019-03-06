@@ -67,10 +67,11 @@ module.exports = (env, argv) => ({
     new SWPrecacheWebpackPlugin({
       cacheId: 'my-pwa-vue-app',
       filename: 'service-worker-cache.js',
-      staticFileGlobs: ['dist/**/*.{js,css}', '/'],
+      staticFileGlobs: ['dist/**/*.{js,css,html}', '/'],
       minify: true,
       stripPrefix: 'dist/',
-      dontCacheBustUrlsMatching: /\.\w{6}\./
+      dontCacheBustUrlsMatching: /\.\w{6}\./,
+      navigateFallback: '/index.html'
     })
   ],
 
